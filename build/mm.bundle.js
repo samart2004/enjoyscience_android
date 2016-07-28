@@ -7763,11 +7763,16 @@ angular.module('mm.core.login', [])
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
-        onEnter: ["$mmLoginHelper", "$mmSitesManager", function($mmLoginHelper, $mmSitesManager) {
-            $mmSitesManager.hasNoSites().then(function() {
-                $mmLoginHelper.goToAddSite();
-            });
-        }]
+      //  onEnter: ["$mmLoginHelper", "$mmSitesManager", function($mmLoginHelper, $mmSitesManager) {
+         //   $mmSitesManager.hasNoSites().then(function() {
+          //      $mmLoginHelper.goToAddSite();
+          //  });
+       // }]
+       // new code
+     onEnter: function($state) {
+        $state.go('mm_login.credentials', {siteurl: 'https://e-learning.kku.ac.th'});
+    }
+    // end code
     })
     .state('mm_login.site', {
         url: '/site',
