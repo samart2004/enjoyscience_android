@@ -7769,9 +7769,9 @@ angular.module('mm.core.login', [])
           //  });
        // }]
        // new code
-     onEnter: function($state) {
-        $state.go('mm_login.credentials', {siteurl: 'https://e-learning.kku.ac.th'});
-    }
+    		onEnter: ["$state", function($state){
+$state.go('mm_login.credentials', {siteurl: 'https://e-learning.kku.ac.th'});   
+        }]
     // end code
     })
     .state('mm_login.site', {
