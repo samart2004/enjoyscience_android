@@ -2,13 +2,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "net.moodle.learn"
+        id        = "com.kku.learn"
         versionCode = "3"
-        version   = "1.2">
-    <name>Learn Moodle</name>
+        version   = "1.0">
+    <name>KKU e-learning</name>
 
     <description>
-        Learn Moodle
+        KKU e-learning App by ilti kku
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
@@ -107,6 +107,8 @@
         <splash src="resources/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
         <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
         <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
+	    <splash src="resources/ios/splash/Default-portrait@2x~iphone6.png" width="750" height="1334"/>
+		<splash src="resources/ios/splash/Default-portrait@3x~iphone6+.png" width="1080" height="1920"/>
     </platform>
 
     <gap:plugin name="cordova-plugin-camera" source="npm" />
