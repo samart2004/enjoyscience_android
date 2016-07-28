@@ -7765,8 +7765,8 @@ angular.module('mm.core.login', [])
         controller: 'mmLoginSitesCtrl',
         onEnter: ["$mmLoginHelper", "$mmSitesManager", function($mmLoginHelper, $mmSitesManager) {
             $mmSitesManager.hasNoSites().then(function() {
-                //$mmLoginHelper.goToAddSite();
-                $state.go('mm_login.site');
+                $mmLoginHelper.goToAddSite();
+               // $state.go('mm_login.site');
            });
         }]
 
@@ -7774,10 +7774,10 @@ angular.module('mm.core.login', [])
     .state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
-        controller: 'mmLoginSiteCtrl',
-        onEnter: function($state) {
-        $state.go('mm_login.credentials', {siteurl: 'https://e-learning.kku.ac.th'});
-    }
+        controller: 'mmLoginSiteCtrl'
+     //   onEnter: function($state) {
+    //    $state.go('mm_login.credentials', {siteurl: 'https://e-learning.kku.ac.th'});
+  //  }
     })
     .state('mm_login.credentials', {
         url: '/cred',
