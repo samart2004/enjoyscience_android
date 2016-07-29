@@ -7765,8 +7765,8 @@ angular.module('mm.core.login', [])
         controller: 'mmLoginSitesCtrl',
         onEnter: ["$mmLoginHelper", "$mmSitesManager", function($mmLoginHelper, $mmSitesManager) {
             $mmSitesManager.hasNoSites().then(function() {
-               // $mmLoginHelper.goToAddSite();
-                $state.go('mm_login.site');
+               $mmLoginHelper.goToAddSite();
+                //$state.go('mm_login.site');
            });
         }]
 
