@@ -2,13 +2,13 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.kku.elearning"
+        id        = "com.enjoyscience.in"
         versionCode = "2016"
         version   = "1.0">
-    <name>KKU e-learning</name>
+    <name>Enjoyscience e-learning</name>
 
     <description>
-        KKU e-learning app by ilti
+        Enjoyscience e-learning app by ilti
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
