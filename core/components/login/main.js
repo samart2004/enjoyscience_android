@@ -218,6 +218,11 @@ angular.module('mm.core.login', [])
             return false;
         }
 
+	if ($mmApp.isSSOAuthenticationOngoing()) {
+            // Authentication ongoing, probably duplicated request.
+            return true;
+        }
+
         // App opened using custom URL scheme. Probably an SSO authentication.
         $mmApp.startSSOAuthentication();
         $log.debug('App launched by URL');
