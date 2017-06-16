@@ -3,16 +3,16 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.enjoyscience.in"
-        versionCode = "2016"
-        version   = "1.0">
+        versionCode = "20170616"
+        version   = "1.0.1">
     <name>Enjoyscience e-learning</name>
 
     <description>
-        Enjoyscience e-learning app by ilti
+        Enjoyscience e-learning Mobile App by ilti
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Pty Ltd
+    <author href="https://enjoyscience.in.th" email="samart@kku.ac.th">
+        Enjoyscience e-Learning Support
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
