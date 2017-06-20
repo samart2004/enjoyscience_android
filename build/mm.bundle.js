@@ -37518,7 +37518,7 @@ angular.module('mm.addons.mod_quiz')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.iltikku.enjoyscience",
+    "app_id" : "com.enjoyscience.in",
     "versioncode" : "20170616",
     "versionname" : "1.0.1",
     "cache_expiration_time" : 300000,
